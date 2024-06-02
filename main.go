@@ -19,7 +19,7 @@ func main() {
 	//DrawTriangleTest()
 	//DrawOrthoTest()
 	//DrawPerspTest()
-	DrawOrthoTestPro()
+	DrawTestPro()
 	//TestMat()
 }
 
@@ -30,7 +30,7 @@ func TestMat() {
 	//m.Index()
 }
 
-func DrawOrthoTestPro() {
+func DrawTestPro() {
 	// 默认模型文件数据在描述 模型空间
 	// 使用 模型矩阵 把物体移动缩放到 世界空间
 	// 使用 观察矩阵 把物体移动到观察者为原点的坐标系内(从相机看到的画面) 观察空间
@@ -41,7 +41,7 @@ func DrawOrthoTestPro() {
 	model := NewTrans(-800, -800, 0).Mul(NewScale(480, 480, 480))     // 模型矩阵
 	lightView := LookAt(NewVec3(0, 0, 1), lightDir, NewVec3(0, 1, 0)) // 光源 观察矩阵
 	eyeView := LookAt(eyePos, NewVec3(-1, -1, -1), NewVec3(0, 1, 0))  // 相机 观察矩阵
-	project := ProjectOrtho(-1200, 1200, -1200, 1200, -1200, 1200)    // 投影矩阵 正交投影
+	project := ProjectOrtho(-1200, 1200, -1200, 1200, -1200, 1200)    // 投影矩阵
 	viewport := Viewport(1200, 1200)                                  // 视口变换
 	// 光源矩阵 & 相机矩阵
 	depthM := viewport.Mul(project).Mul(lightView).Mul(model)
