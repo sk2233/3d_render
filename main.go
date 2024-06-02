@@ -10,8 +10,9 @@ import (
 	"github.com/go-gl/mathgl/mgl32"
 )
 
-// https://www.bilibili.com/video/av6731067/?p=4&spm_id_from=333.788.0.0&vd_source=923fe31a18e5b835f6cc1eeb2a08340b
 // https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started
+// https://www.bilibili.com/video/av6731067/?p=4&spm_id_from=333.788.0.0&vd_source=923fe31a18e5b835f6cc1eeb2a08340b
+// https://space.bilibili.com/3493092766255793/video
 
 func main() {
 	//DrawLineTest()
