@@ -11,6 +11,7 @@ import (
 // https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started
 // https://www.bilibili.com/video/av6731067/?p=4&spm_id_from=333.788.0.0&vd_source=923fe31a18e5b835f6cc1eeb2a08340b
 // https://space.bilibili.com/3493092766255793/video
+// https://www.bilibili.com/video/BV1X7411F744?t=1168.5&p=9
 
 func main() {
 	//DrawLineTest()
