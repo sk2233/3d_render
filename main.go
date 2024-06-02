@@ -6,8 +6,6 @@ package main
 
 import (
 	"math"
-
-	"github.com/go-gl/mathgl/mgl32"
 )
 
 // https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started
@@ -20,14 +18,6 @@ func main() {
 	//DrawOrthoTest()
 	//DrawPerspTest()
 	DrawTestPro()
-	//TestMat()
-}
-
-func TestMat() {
-	m := mgl32.Mat4{}
-	m.Inv()
-	//m.Mul4x1()
-	//m.Index()
 }
 
 func DrawTestPro() {
