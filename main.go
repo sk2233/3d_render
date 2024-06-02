@@ -10,7 +10,6 @@ import (
 	"github.com/go-gl/mathgl/mgl32"
 )
 
-// https://bytetech.info/articles/6874215532715835400
 // https://www.bilibili.com/video/av6731067/?p=4&spm_id_from=333.788.0.0&vd_source=923fe31a18e5b835f6cc1eeb2a08340b
 // https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started
 
