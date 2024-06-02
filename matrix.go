@@ -142,7 +142,7 @@ func Viewport(w, h float64) Matrix {
 }
 
 func NewInverse(matrix Matrix) Matrix {
-	mat := ToMat4(matrix)
+	mat := ToMat4(matrix)      // 推荐后面还是直接使用现有矩阵与向量类吧
 	return ToMatrix(mat.Inv()) // 暂时借助其实现求逆
 	//det := matrix[0][0]*(matrix[1][1]*matrix[2][2]-matrix[1][2]*matrix[2][1]) -
 	//	matrix[0][1]*(matrix[1][0]*matrix[2][2]-matrix[1][2]*matrix[2][0]) +
